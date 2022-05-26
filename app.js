@@ -2,7 +2,7 @@ const express=require("express");
 const path=require("path");
 const fs=require("fs");
 const app=express();
-const port=80;
+const port=process.env.Port || 8000;
 
 //Express Specific stuff
 app.use(express.static('static'));
